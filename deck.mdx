@@ -1,23 +1,51 @@
-import { Head } from 'mdx-deck'
+export { hack as theme } from 'mdx-deck/themes'
 
-export { default as theme } from './theme'
-
-<Head>
-  <title>Presentation Title</title>
-</Head>
-
-# Hello
+# Building a `Portfolio` and Hosting it on `GitHub`
 
 ---
 
-## Edit this file
+### I am Athul Cyriac Ajay
+#### Github Campus Expert, Lead-Open Source Club
+#### S2 CS,CEK
 
-To create your presentation
+---
+Goto `github.com` and create an Account.   
+After creating, Create a Repository by clicking the `+` symbol on the top right corner of GitHub.     
+Give the repository `your_github_username.github.io`
+You can either initialize with or without the Readme
+---
+### Let's Start by Adding you to Git on your Machine
+Type in this command in your Terminal(without '$' symbol)    
 
-```notes
-- Create speaker notes in fenced code blocks
-```
+- `$ git config --global user.name "Your Github-UserName"`   
+-----------
+- `$ git config --global user.email "Your Github Email"`
 
 ---
 
-<https://github.com/jxnblk/mdx-deck>
+### Now go to the Folder on your System with your Website's Files
+Type `$ cd "path of your workfiles"`
+
+---
+### Now we can Initialize the Repository with Git
+Type  `$ git init`
+---
+### Now we need to add the Remote of the Repository
+ `$ git remote add origin https://github.com/your_github_username.github.io.git`   
+ This can also be found from your repository site on Github and you can copy paste it here.
+---
+### Stage it!!!
+Type `$ git add -all`   
+This will Stage all the files before Commiting
+---
+### Commit it!!!
+Type `$ git commit -m "A Message"`  
+This will commit all the files....
+---
+### Push it!!!
+Type `$ git push -u origin master`    
+You maybe asked to type in your Github id and Password.  
+Type those in and got to github.com
+---
+### Is it here?
+Refresh the page.... You can find all these files here....
