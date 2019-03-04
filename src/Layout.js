@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
     <Wrapper>{children}</Wrapper>
     <Footer>
       <span > </span>
-      <span><a href="https//:github.com/Athul-CA">@Athul-CA</a></span>
+      <span><a href=" https://github.com/Athul-CA" >@Athul-CA</a></span>
     </Footer>
   </Fragment>
 )
