@@ -1,38 +1,5 @@
-
-# mdx-deck basic template
-
-This was generated with [mdx-deck][]'s `npm init deck` command.
-
-## Development
-
-To run the presentation deck in development mode:
-
-```sh
-npm start
-```
-
-Edit the [`deck.mdx`](deck.mdx) file to get started.
-
-## Exporting
-
-To build the presentation deck as static HTML:
-
-```sh
-npm run build
-```
-
-To export a PDF:
-
-```sh
-npm run pdf
-```
-
-To export an image of the title slide:
-
-```sh
-npm run image
-```
-
-For more documentation see the [mdx-deck][] repo.
-
-[mdx-deck]: https://github.com/jxnblk/mdx-deck
+# Here are some resouurces for You to Learn Git and GitHub
+Git|Site/ Instructions
+---|---
+GitHub Learning Lab|[Lab](https://lab.github.com/)|
+GitHub Flow|[Guides](https://guides.github.com/introduction/flow/)
