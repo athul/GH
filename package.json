@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "start": "mdx-deck deck.mdx",
+    "dev": "mdx-deck git.mdx",
     "build": "mdx-deck build deck.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",

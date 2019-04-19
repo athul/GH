@@ -6,7 +6,7 @@ var green = '#42ff71';
 export default {
   ...theme,
  Layout,
-  font: '"Roboto Mono", monospace',
+  font: '"Product Sans", monospace',
   monospace: '"Anonymous Pro", monospace',
   colors: {
     text: green,
