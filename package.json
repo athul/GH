@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "mdx-deck github.mdx",
-    "build": "mdx-deck build git.mdx",
+    "build": "mdx-deck build github.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
