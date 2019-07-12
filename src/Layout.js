@@ -15,7 +15,7 @@ const Footer = styled.footer`
   float=right
   font-size: 25px;
   font-family:IBM Plex Mono,monospace;
-  color:Indigo ;
+  color:azure;
   padding: 30px 30px;
   text-align: right;
   width: 100vw;
@@ -28,8 +28,8 @@ const Layout = ({ children }) => (
   <Fragment>
     <Wrapper>{children}</Wrapper>
     <Footer>
-      <span > </span>
-      <span><a href=" https://github.com/Athul-CA" >@Athul-CA</a></span>
+    <span>@Athul-CA</span>
+      <span><img src="images/gce.png" height="50" width="300"/> </span>
     </Footer>
   </Fragment>
 )

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "mdx-deck git.mdx",
+    "dev": "mdx-deck github.mdx",
     "build": "mdx-deck build git.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
@@ -13,5 +13,8 @@
     "raw-loader": "^2.0.0"
   },
   "name": "oss_workshop1",
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "dependencies": {
+    "rebass": "^3.1.1"
+  }
 }
