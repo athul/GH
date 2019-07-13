@@ -1,3 +1,6 @@
+## GitHub Slides => [Github](https://athul-ca.github.io/GH/github)
+## Portfolio Slides =>[Portfolio](https://athul-ca.github.io/GH/port)
+
 
 # mdx-deck basic template
 
