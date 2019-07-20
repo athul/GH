@@ -1,20 +1,21 @@
 {
   "private": true,
   "scripts": {
-    "dev": "mdx-deck github.mdx",
+    "dev": "mdx-deck freshers.mdx",
     "build": "mdx-deck build github.mdx",
     "pdf": "mdx-deck pdf deck.mdx",
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
   },
   "devDependencies": {
-    "mdx-deck": "^1.6.7",
+    "mdx-deck": "^3.0.7",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^2.0.0"
   },
   "name": "oss_workshop1",
   "version": "1.0.0",
   "dependencies": {
+    "@mdx-deck/themes": "^3.0.6",
     "rebass": "^3.1.1"
   }
 }
