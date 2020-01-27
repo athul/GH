@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "mdx-deck": "^3.0.13",
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "start": "mdx-deck deck.mdx"
+  },
+  "resolutions": {
+    "mdx-deck/**/gatsby": "2.18.4"
+  }
+}
