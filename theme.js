@@ -7,11 +7,11 @@ const Provider = props => (
       css={{
         position: 'fixed',
         right: 0,
-        bottom: 0,
-        margin: 16,
+        bottom: -1,
+        margin: 10,
       }}
     >
-      <p style={{fontSize:40,fontFamily:`Monaco,monospace`}}> @athulcajay</p>
+      <p style={{fontSize:24,fontFamily:`Monaco,monospace`}}> @athulcajay</p>
     </div>
   </div>
 )
