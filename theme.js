@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Provider = props => (
   <div>
     {props.children}
@@ -12,7 +11,7 @@ const Provider = props => (
         margin: 10,
       }}
     >
-      <p style={{fontSize:24,fontFamily:`Fira Code,monospace`,color:`yellow`}}>@athulcajay</p>
+      <p style={{fontSize:24,fontFamily:`Cascadia Code,monospace`,color:`yellow`}}>@athulcajay</p>
     </div>
     <div
       css={{
@@ -23,7 +22,7 @@ const Provider = props => (
         margin: 10,
       }}
     >
-      <p style={{fontSize:24,fontFamily:`Cascadia Code,monospace`,color:`crimson`}}>@athul</p>
+      <p style={{fontSize:24,fontFamily:`Cascadia Code,monospace`,color:`lime`}}>@athul</p>
       
     </div>
   </div>

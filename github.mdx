@@ -1,16 +1,27 @@
 import { future } from 'mdx-deck/themes'
 import theme from './theme'
-import { Image,Appear } from 'mdx-deck'
+import { Image,Appear,Head,Invert } from 'mdx-deck'
 export const themes = [
   theme,
   future,
 ]
 
+<Head>
+  <title>Intro to GitHub</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@athulcajay" />
+  <meta name="twitter:title" content="Intro to GitHub" />
+  <meta name="twitter:description" content="Introduction to GitHub and not Git" />
+  <meta name="twitter:image" content="https://agogs.glitch.me/athul/CDN/raw/master/issues.png" />
+</Head>
+
+
+
 <Image src='http://agogs.glitch.me/athul/Stuhacks/raw/master/s2.png'>
 
-# Introduction to GitHub
+# &nbsp;Introduction to &nbsp;GitHub
 
-:wave: Hackcamp
+&nbsp;:wave: <b style={{color:`orange`}}>HackCamp</b>
 
 </Image>
 
@@ -33,22 +44,40 @@ College of Engineering Kidangoor,<br/> Kottayam
 ---
 
 ## WHat is Git? 🥁
-`Git is a Distributed Version Control System.`<br/> More Simply, it is a tracking software which tracks files.
+
+<code style={{color:`cyan`}}>Git is a Distributed Version Control System.</code> 
+
+More Simply, it is a tracking software which tracks files.
 
 ---
-It's more like **Google** 😝 but `git` tracks on Files. 
 
-It was made by Linus Torvalds*(yeah the same guy)* in 2007 for one of his projects. Furthur digging showed that it is made in a Data Structure called Merkle Tree
+It's more like <b><u style={{color:`red`}}>Google</u></b> 😝 but `git` tracks on Files. 
+
+It was developed by Linus Torvalds*(yeah the same guy)* in 2005 to manage updates on the Linux Kernel<br/><br/>
+Git helps in managing and track different versions of software. This in turn makes collaboration easy and hassle free.
 
 ---
+<Invert>
 
 ## What is GitHub????
 
 <img src="https://octodex.github.com/images/baracktocat.jpg" height="500" width="500"/>
 
+</Invert>
+
 ---
 
-GitHub is an Platform where you can <br/>**host code**, <br/>**Collaborate** and <br/>**Contribute** to code :tada:
+It is a Platform where you can <br/>**host code**, <br/>**Collaborate** and <br/>**Contribute** to code :tada:
+
+---
+
+More Simply GitHub is basically a website <br/>which runs git **under the hood**, <br/>so you can view your repositories online<br/>
+<center>🤓</center>
+
+---
+<img src='https://agogs.glitch.me/athul/CDN/raw/master/git.png'/> 
+
+😜
 
 ---
 You can use GitHub to  
@@ -58,27 +87,26 @@ You can use GitHub to
 <li>Make Open Source Contributions🤝,</li>
 <li>Host your Website✨ </li>
 <li>and much more.....</li>
-<li>Even the software making this presentation is on GitHub and is Open Source 😛 </li>
 </Appear>
 </ul>
 
 ---
+Even the software making this presentation is on GitHub and is Open Source 😛
+
+---
 ### Git/GitHub Repositories
-A **repository** is analogous to a Folder on your local system.<br></br><br></br>
-A repository hold your Projects Data and changes.<br></br><br></br>
-The only difference between a usual folder and a Git repository is that it contains a `.git` folder.
-
----
-> `GitHub basically hosts Git Repositories`<br></br>
-<center>🤓</center>
+A <b style={{color:`slateblue`}}>repository</b> is to a Folder on your computer.<br></br><br></br>
+A repository hold your Project and changes.<br></br><br></br>
+The only difference between a usual folder and a Git repository is that it contains a (*hidden*) `.git` folder.
 
 ---
 
-A GitHub Repository can hold anything from Code to Multimedia Files to large binaries. <br></br>The size limit on GitHub per repository is 1 GB
+
+A GitHub Repository can hold anything from Code to Multimedia Files to large binaries. <br></br>The upper limit on the size of a repo being 1 GB
 
 ---
 
-### Some GitHub Jargon
+### Some Git/GitHub Jargon
 
 <ul>
   <Appear>
@@ -97,18 +125,31 @@ A GitHub Repository can hold anything from Code to Multimedia Files to large bin
   <Appear>
   <li>Issues❕: Report Bugs, Feature Request or Feedback to a Repo</li>
   <li>Pull Request 🔀: Contribute to a repo with fixes or code</li>
-  <li>Commit 📸: A Snapshot of your Repository State identified by a SHA</li>
+  <li>Commit 📸: A Snapshot of your Repository State identified by a unique HASH</li>
   
   </Appear>
   </ul>
 
 ---
-
-### GitHub Issues
-Issues provide a way to **provide Feedback** the people who own the project.<br></br><br></br> Issues are a great way to keep track of tasks, enhancements, and bugs for your projects.
+### Git Branchesᛘ and forks⑂
+Branching allows each developer to <b style={{color:`cyan`}}>branch out from the original code base</b> and <i style={{color:`hotpink`}}>isolate their work</i> from others.<br/> It also helps Git to easily merge versions later on.
 
 ---
-Issues can boost your productivity by 💯.
+A *fork* is a <b style={{color:`crimson`}}>copy of a repository</b>. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+---
+The whole Git Tree Structure can be seen from the `Network` tab in the repo Insights
+
+---
+<img alt="issues" src="https://agogs.glitch.me/athul/CDN/raw/master/branches.png"/>
+
+---
+
+### GitHub Issues
+Issues provide a way to <b style={{color:`cyan`}}>provide Feedback</b> to the maintainers who work the project.<br></br><br></br> Issues are a great way to keep track of <u style={{color:`hotpink`}}>tasks, enhancements, and bugs</u> for your projects.
+
+---
+Issues boost productivity by 💯.
 <ul>
   <Appear>
     <li>You can keep track of requests/bugs on  your projects</li>
@@ -125,10 +166,51 @@ Issues can boost your productivity by 💯.
 ---
 
 ### GitHub Pull Requests
-Pull Request make it easier/help developers collaborate.<br></br><br></br>They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.
+Pull Request are a way through which developers collaborate on GitHub.<br/><br/>They provide a user-friendly web interface for discussing proposed changes before integrating them into the official project.
 
 --- 
 
-Pull Requests are an integral part on <br></br><br></br>GitHub and in Open Source Contributions 🤝.
+<code style={{color:`cyan`}}>Pull requests let you tell others about changes you've pushed to a GitHub repository. Once a pull request is sent, interested parties can review the set of changes, discuss potential modifications, and even push follow-up commits if necessary.</code>
 
 ---
+Pull Requests basically work with <br/><code style={{color:`red`}}>branchesᛘ</code> and <br/><code style={{color:`yellow`}}>forks⑂.</code><br/> Either you can open a PR from another branch or from a fork.
+
+---
+
+### GitHub Student Developer Pack
+
+<img src="https://education.github.com/assets/sdp-backpack-a64038716bf134f45e809ff86b9611fb97e41bbd2ccfa3181da73cf164d3c200.png"/>
+
+---
+### What is it?
+---
+The [Student Developer Pack](https://education.github.com/pack) is a toolkit of different paid services given to students for free by GitHub
+
+---
+## Whats are the benefits for students?
+
+---
+
+Students will get **$200k** worth of Products and Services. <br/> This includes 
+- <b style={{color:`crimson`}}> 4 Domain Names 🌐</b>
+- <b style={{color:`orchid`}}> Cloud Credits on AWS, Azure and DigitalOcean☁</b>
+- <b style={{color:`mediumspringgreen`}}>Multiple Platforms for development,testing and deployment like Heroku, Travis CI, Mailgun🚢</b>
+
+---
+- <b style={{color:`slateblue`}}>Licenses for Paid Software like Jetbrains, Tower Git, Gitkraken etc....👨‍💻</b>
+- <b style={{color:`deeppink`}}>Multiple Paid Learning Platforms like Frontend Masters, Datacamp, Educative etc...👨‍🏫</b>
+- <b style={{color:`teal`}}>A <u style={{color:`magenta`}}>PRO</u> badge on your GitHub Profile 🎉</b>
+
+---
+### Get the pack at 
+
+https://education.github.com/pack
+
+---
+
+## Thank You 🙏
+
+My GitHub ID: <i style={{color:`lime`}}>Left Corner</i><br/>
+My Twitter ID: <i style={{color:`yellow`}}>Right Corner</i><br/>
+Email: <i style={{color:`red`}}>athul8720@gmail.com</i><br/>
+Website: <i style={{color:`hotpink`}}>https://athulcyriac.co</i><br/>
