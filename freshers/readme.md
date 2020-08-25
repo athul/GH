@@ -1,1 +1,0 @@
-# Freshers Orientation materials
