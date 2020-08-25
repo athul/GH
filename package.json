@@ -4,8 +4,8 @@
     "prettier": "^1.19.1"
   },
   "scripts": {
-    "start": "mdx-deck c+c++.mdx",
-    "build": "mdx-deck build c+c++.mdx"
+    "start": "mdx-deck github.mdx",
+    "build": "mdx-deck build stu+hacks.mdx"
   },
   "resolutions": {
     "mdx-deck/**/gatsby": "2.18.4"
