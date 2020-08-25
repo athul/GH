@@ -1,17 +1,16 @@
-const blue = '#0af'
-
 export default {
     googleFont:'https://fonts.googleapis.com/css2?family=Montserrat:wght@600',
     fonts: {
-    heading: '"Avenir Next", system-ui, sans-serif',
-    monospace:'"Cascadia Code",system-ui,monospace',
-    body:'"Product Sans",system-ui',
+    heading: '"Montserrat", system-ui, sans-serif',
+    monospace:'"Monaco",system-ui,monospace',
+    body:'"Product Sans",system-ui,"Montserrat",sans-serif',
   },
   colors: {
     text: '#fff',
-    background: '#111',
+    code: 'hotpink',
+    background: 'black',
     primary: 'cyan',
-    black: '#000',
+    black: 'black',
   },
   fontWeights: {
     heading: 600,
@@ -26,18 +25,25 @@ export default {
     },
   },
   styles: {
-    pre: {
-      color: 'primary',
-      bg: 'black',
+    // pre: {
+    //   color: 'hotpink',
+    //   bg: 'black',
+    // },
+    h1:{
+      margin:'20px',
     },
-    code: {
-      color: 'primary',
+    h2:{
+      color:"orange",
+      bg:'background',
+    },
+    inlineCode: {
+      color: 'hotpink',
     },
     p:{
-        margin:'28px',
+      margin:'28px',
     },
     li:{
-        marginLeft:'40px'
+      marginLeft:'40px'
     }
   },
 }
