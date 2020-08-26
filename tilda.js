@@ -44,6 +44,9 @@ export default {
     },
     li:{
       marginLeft:'40px'
-    }
+    },
+    code:{
+      fontSize:28
+    },
   },
 }

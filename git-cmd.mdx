@@ -1,6 +1,7 @@
 import tilda from './tilda'
 import theme from './theme'
 import { Image,Appear,Head,Invert } from 'mdx-deck'
+import Highlighter from 'react-syntax-highlighter'
 export const themes = [
   theme,
   tilda,
@@ -57,5 +58,23 @@ You've got
 ### Getting used with Git
 
 ---
+### Fire Up a Terminal Window :fire:
+Bash or Command Prompt
+
+---
+Le t Git know who you are
+
+<Highlighter language='bash'>
+{`$ git config --global user.name "your_username"`}
+{`$ git config --global user.email "your_email"`}
+</Highlighter>
+
+
+---
 `$ git init`
 - Initializes an empty Git Repository
+
+---
+
+`$ git add <filename>`
+- Add Files to <u style={{color:`cyan`}}><code style={{color:`cyan`}}>Staging Area</code></u>
