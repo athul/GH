@@ -2,7 +2,7 @@ export default {
     googleFont:'https://fonts.googleapis.com/css2?family=Montserrat:wght@600',
     fonts: {
     heading: '"Montserrat", system-ui, sans-serif',
-    monospace:'"Monaco",system-ui,monospace',
+    monospace:'"Jetbrains Mono",system-ui,monospace',
     body:'"Product Sans",system-ui,"Montserrat",sans-serif',
   },
   colors: {
