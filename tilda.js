@@ -46,7 +46,13 @@ export default {
       marginLeft:'40px'
     },
     code:{
-      fontSize:28
+      fontSize:35,
     },
+    tt:{
+      fontFamily:'monospace'
+    },
+    strong:{
+      color:'tomato'
+    }
   },
 }

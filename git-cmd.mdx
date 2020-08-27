@@ -1,9 +1,8 @@
 import tilda from './tilda'
-import theme from './theme'
+import provider from './theme'
 import { Image,Appear,Head,Invert } from 'mdx-deck'
-import Highlighter from 'react-syntax-highlighter'
 export const themes = [
-  theme,
+  provider,
   tilda,
 ]
 
@@ -50,9 +49,12 @@ You've got
 - Git GUI Client(Optional)
 
 ---
-### Code will be in this 
+### Code will be in these
+```
+Colour Blocks (nightOwl)
+```
+and in this `colour`
 
-<b style={{color:`hotpink`}}>Color (hotpink)</b>
 
 ---
 ### Getting used with Git
@@ -62,19 +64,157 @@ You've got
 Bash or Command Prompt
 
 ---
-Le t Git know who you are
+Let Git know who you are
 
-<Highlighter language='bash'>
-{`$ git config --global user.name "your_username"`}
-{`$ git config --global user.email "your_email"`}
-</Highlighter>
+```bash
+$git config --global user.name "your_username"
+$git config --global user.email "hello@example.com"
+```
+---
 
+GitHub uses the email address set in your local Git configuration to associate commits pushed from the command line with your
+GitHub account.
+
+---
+
+###  Let's setup a base Project
+
+---
+
+```bash
+# creating a new folder for our project
+$ mkdir MyProject
+
+# changing Directory to our Project folder
+$ cd MyProject
+
+# Initalize the current folder as a new Repository
+$git init
+
+Initialized empty Git repository in 
+/Users/athul/Desktop/MyProject/.git/
+```
 
 ---
 `$ git init`
 - Initializes an empty Git Repository
 
 ---
+### Make your First Commit
 
-`$ git add <filename>`
-- Add Files to <u style={{color:`cyan`}}><code style={{color:`cyan`}}>Staging Area</code></u>
+---
+
+Commits are **Checkpoints/Snapshot** of the state of your 
+
+Repository(project) at a particular time
+
+---
+```bash
+#create a new file
+$ touch fruits.txt
+# check status of repository
+$ git status
+# add file to staging area
+$ git add fruits.txt
+# commit the file
+$ git commit -m "Add fruits.txt"
+```` 
+
+---
+
+![](https://git-scm.com/book/en/v2/images/lifecycle.png)
+
+
+Git file status lifecycle
+
+---
+
+Always make **meaningful** commit messages
+
+---
+`$git diff`
+
+Shows the Differences between the current state and prvious state of a file if any exists
+
+---
+This is the output of `$git diff`
+```
+diff --git a/fruits.txt b/fruits.txt
+index c69849c..7e57fda 100644
+--- a/fruits.txt
++++ b/fruits.txt
+@@ -1,3 +1,4 @@
+ Apples
+ Oranges
+ Grapes
++Avocados
+
+```
+---
+To get diff of staged files use the '`--cached`' flag
+
+`$ git diff --cached`
+
+---
+`$ git log`
+
+Shows the list of Commits with their details
+
+in your Repository
+
+---
+
+```bash
+commit 060e47869e1a86a7d3274c011fc4a2ae1ad9e42b
+Author: athul <athul8720@gmail.com>
+Date:   Wed Aug 26 21:35:37 2020 +0530
+
+    Add Grapes
+
+commit 4e82c5d865c69673e8bc8dc2f91cbf1bd5b82b5b
+Author: athul <athul8720@gmail.com>
+Date:   Wed Aug 26 21:35:14 2020 +0530
+
+    Add Oranges
+
+commit 938317d170195373cf72795837afa256c986801f
+Author: athul <athul8720@gmail.com>
+Date:   Wed Aug 26 21:34:44 2020 +0530
+
+    Add Apples
+
+commit e466572ace4ebbb137f8f8febf4b46fc5d28c322
+Author: athul <athul8720@gmail.com>
+Date:   Wed Aug 26 21:34:15 2020 +0530
+
+    Add fruits.txt
+```
+
+---
+`$ git log --online --graph`
+
+```bash
+* 060e478 (HEAD -> master) Add Grapes
+* 4e82c5d Add Oranges
+* 938317d Add Apples
+* e466572 Add fruits.txt
+```
+Shows all the commits as a graph
+
+---
+
+Here is a better example
+
+```bash
+* d8b54f6 ✨Makefile and setting version by tag (#11)
+*   4e31879 Merge pull request #10 from athul/error_bubbling
+|\  
+| * 426c416 🛠 Headers print in a single loop
+| * bd19b81 ✨Added a Better formatter for json
+| * e46f57c fix install from script link
+| * ce06aa4 sending errors to stderr
+| * fb3ec99 explicitly close response body
+| * e7296b0 bubbling errors up to main() instead of panicking
+|/  
+*   6f797bf 🔀Merge pull request #9 from athul/ctypes
+```

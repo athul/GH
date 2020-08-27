@@ -9,5 +9,9 @@
   },
   "resolutions": {
     "mdx-deck/**/gatsby": "2.18.4"
+  },
+  "dependencies": {
+    "@theme-ui/prism": "^0.3.0",
+    "react-syntax-highlighter": "^13.5.1"
   }
 }
