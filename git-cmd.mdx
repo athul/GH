@@ -132,13 +132,13 @@ Git file status lifecycle
 Always make **meaningful** commit messages
 
 ---
-`$git diff`
+`$ git diff`
 
 Shows the Differences between the current state and prvious state of a file if any exists
 
 ---
 This is the output of `$git diff`
-```
+```diff
 diff --git a/fruits.txt b/fruits.txt
 index c69849c..7e57fda 100644
 --- a/fruits.txt
@@ -239,13 +239,70 @@ $ git reset HEAD/file_name [options]
 ```
 
 ---
+
 ## Branches
 
 Branches helps to us to isolate the code and work independently without changing the base code
 
+<img src="https://wac-cdn.atlassian.com/dam/jcr:746be214-eb99-462c-9319-04a4d2eeebfa/01.svg?cdnVersion=1202" height="500" width="500"/>
+
 ---
-<Invert>
+```bash
+# list all  Branches
+$ git branch
+# To create a new branch
+$ git branch MyBranch
+# To change control to new Branch
+$ git checkout MyBranch
+# create and change to branch
+$ git checkout -b <new branch>
+# To merge two branches together
+(master)$ git merge MyBranch
+```
 
-![]()
+---
+# Git & GitHub
 
-</Invert>
+---
+Create a Repository on GitHub
+
+---
+### Remote
+A remote URL is Git's fancy way of saying **"the place where your code is stored."** That URL could be your repository on GitHub, or another user's fork, or even on a completely different server.
+
+---
+Working with Remotes
+```bash
+# add a remote to current repository
+$ git remote add origin <remote url>
+# Example
+$ git remote add origin git@github.com:athul/jiofi-cli.git
+# Show all Remotes
+$ git remote -v
+```
+
+---
+
+## Downloading / Updating repos
+
+---
+
+```bash
+# to download a repository
+$ git clone <repo url>
+# to grab changes from remote repos
+$ git pull 
+# to submit your changes to remote
+$ git push
+```
+---
+
+A demo of Pull Requests and Issues and some other features of GitHub
+
+--- 
+### Thank You 🙏
+Reach me on
+- Email : **athul8720@gmail.com**
+- Twitter: **@athulcajay**
+- GitHub: **@athul**
+- Telegram: **@a2hu1**

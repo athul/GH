@@ -2,7 +2,7 @@ export default {
     googleFont:'https://fonts.googleapis.com/css2?family=Montserrat:wght@600',
     fonts: {
     heading: '"Montserrat", system-ui, sans-serif',
-    monospace:'"Jetbrains Mono",system-ui,monospace',
+    monospace:'"Monaco",system-ui,monospace',
     body:'"Product Sans",system-ui,"Montserrat",sans-serif',
   },
   colors: {
@@ -34,7 +34,6 @@ export default {
     },
     h2:{
       color:"orange",
-      bg:'background',
     },
     inlineCode: {
       color: 'hotpink',
