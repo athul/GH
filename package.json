@@ -5,7 +5,7 @@
   },
   "scripts": {
     "start": "mdx-deck github.mdx",
-    "build": "mdx-deck build github.mdx"
+    "build": "mdx-deck build osc.mdx"
   },
   "resolutions": {
     "mdx-deck/**/gatsby": "2.18.4"
