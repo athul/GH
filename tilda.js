@@ -48,6 +48,7 @@ export default {
       fontSize:35,
     },
     tt:{
+      padding:'2rem',
       fontFamily:'monospace'
     },
     strong:{
